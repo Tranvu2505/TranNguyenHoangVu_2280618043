@@ -90,5 +90,9 @@ def ecc_verify_signature():
     is_valid = ecc_cipher.verify(message, signature, public_key)
     return jsonify({'is_valid': is_valid})
 
+
+
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=5000,debug=True)
